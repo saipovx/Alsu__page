@@ -1,3 +1,4 @@
+
 // Container
 .container {
     max-width: ($containerWidth + $containerPadding) + px;
@@ -72,7 +73,8 @@
 // Body Locked
 body {
     font-family: 'DM Sans', sans-serif;
-    background: #B1EF42;
+    background: #ffffff;
+
     &.locked {
         overflow: hidden;
     }
@@ -91,16 +93,16 @@ body {
 }
 
 
-.swiper-slide-prev{
+.swiper-slide-prev {
     pointer-events: none;
 }
 
-.swiper-slide-next{
-    pointer-events: none;
-}
+// .swiper-slide-next {
+//     pointer-events: none;
+// }
 
 
- .swiper__btn1{
+.swiper__btn1 {
     position: absolute;
     right: 0px;
     top: 50%;
@@ -109,12 +111,12 @@ body {
     justify-content: center;
     width: 51px;
     height: 34px;
-     
+
     background: rgba(0, 0, 0, 0.15);
     border-radius: 15px;
     z-index: 22;
 
-    
+
     @media (max-width: $breakpoint1450) {
         top: -60px;
         right: 115px;
@@ -127,7 +129,7 @@ body {
 }
 
 
- .swiper__btn2{
+.swiper__btn2 {
     position: absolute;
     left: -80px;
     top: 50%;
@@ -136,7 +138,7 @@ body {
     justify-content: center;
     width: 51px;
     height: 34px;
-     
+
     background: rgba(0, 0, 0, 0.15);
     border-radius: 15px;
 
@@ -149,4 +151,57 @@ body {
         left: 0px;
     }
 
+}
+
+
+.link-in {
+
+    // background: #6AB61F;
+    &:hover {
+        background: #167fe9;
+        // цвет linkedIn в градиенте
+        background: linear-gradient(240deg, #167fe9 0%, #4492e6 100%) !important;
+    }
+}
+
+.link-inst {
+    &:hover {
+        // цвет instagram в градиенте
+        background: linear-gradient(240deg, #c0176b 0%, #F7A400 100%) !important;
+    }
+}
+
+.link-f {
+    &:hover {
+        // цвет facebook в градиенте
+        background: linear-gradient(240deg, #3b5998 0%, #608ae5 100%) !important;
+    }
+}
+
+.link-web{
+    &:hover {
+        // цвет web в градиенте
+        background: linear-gradient(240deg, #20ca6f78 0%, #30d490 100%) !important;
+    }
+}
+
+.contonio{
+    margin-top: 20px;
+
+    &__label{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        & div{
+            font-size: 14px;
+        }
+    
+    }
+
+    &__gap{
+        display: flex;
+        flex-direction: column;
+        gap: 10px !important;
+    }
 }
